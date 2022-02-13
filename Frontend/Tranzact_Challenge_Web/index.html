@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tranzact Challenge - Premium</title>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script src="js/app.js" type="module"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Premium Calculator</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <div>
+                    <label class="control-label">Date of Birth</label>
+                    <div class="input-group date">
+                        <input type="date" id="txtBirthDate" name="trip-start" min="1910-01-01" max="0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div>
+                    <label class="control-label">State</label>
+                    <div class="input-group">
+                        <select class="form-select" id="cboStates"> 
+                        </select>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-4">
+                <div>
+                    <label class="control-label">Plan</label>
+                    <div class="input-group">
+                        <select class="form-select" id="cboPlan">                  
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <div>
+                    <label class="control-label">Age</label>
+                    <div class="input-group">
+                        <input id="txtAge" type="text" class="form-control" value="0" readonly />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div>
+                    <label class="control-label"></label>
+                    <div class="input-group">
+                        <button ID="btnGetPremium" type="button" class="btn btn-primary" disabled>Get Premium</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-4">
+                <div>
+                    <label class="control-label">Period</label>
+                    <div class="input-group">
+                        <select class="form-select" id="cboPeriod">  
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>           
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="x_panel">
+                <div class="x_title">
+                    <ul class="nav navbar-right panel_toolbox" style="min-width:0px !important;">
+                        <li>
+                            <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <div class="table-responsive">
+                        <table id="tblPremiumResults" class="table table-hover table-striped" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Carrier</th>
+                                    <th>Premium</th>
+                                    <th>Annual</th>
+                                    <th>Monthly</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>  
+  </body>
+</html>
